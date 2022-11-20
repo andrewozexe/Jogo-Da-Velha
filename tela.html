@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo Da Velha</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="menu" data-menu >
+        <p class="menu-text">Bem vindo ao Jogo da Velha!</p>
+        <p class="menu-text">Escolha qual deseja jogar:</p>
+        <div>
+            <button class="menu-button" onclick="comecoX()" data-button="X">X</button>
+            <button class="menu-button" onclick="comecoO()" data-button="O">O</button>
+        </div>
+        <script src="engine.js"></script>
+    </div>
+    <div class="game-over">
+        <div class="menu-text" id="finalText" data-final>Ganhou!</div>
+        <button class="menu-button" id="restart" onclick="restart()"><img src="pngegg.png" alt="restart" class="image-btn"></button>
+    </div>
+
+    <div class="board" id="board" data-board>
+        <div class="cell" data-cell id="0"></div>
+        <div class="cell" data-cell id="1"></div>
+        <div class="cell" data-cell id="2"></div>
+        <div class="cell" data-cell id="3"></div>
+        <div class="cell" data-cell id="4"></div>
+        <div class="cell" data-cell id="5"></div>
+        <div class="cell" data-cell id="6"></div>
+        <div class="cell" data-cell id="7"></div>
+        <div class="cell" data-cell id="8"></div>
+    </div>
+<script src="engine.js"></script>
+
+</body>
+</html>
